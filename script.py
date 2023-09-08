@@ -12,11 +12,12 @@ class scripts(object):
 Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, 𝙄'𝙢 𝙅𝙪𝙨𝙩 𝘼 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 𝙁𝙤𝙧𝙬𝙖𝙧𝙙 𝘽𝙤𝙩 𝙈𝙖𝙙𝙚 𝘽𝙮 \n 𝘼𝘿𝙈𝙄𝙉 𝙐𝙎𝙀 𝙊𝙉𝙇𝙔 𝘿𝙊 𝙉𝙊𝙏 𝙎𝘼𝙉𝘿 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 𝙍𝙀𝙌𝙐𝙀𝙎𝙏 \n <a href='t.me/kishan484'>𝙆𝙄𝙎𝙃𝘼𝙉 𝙔𝘼𝘿𝘼𝙑  </a>.</b>"""
 
     ABOUT_TXT = """
-<b>✯ Mʏ Nᴀᴍᴇ: {}
+<b>✯🤖 Mʏ Nᴀᴍᴇ: {}
 ✯ 🧟Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/kishan484'>𝙆𝙄𝙎𝙃𝘼𝙉 𝙔𝘼𝘿𝘼𝙑 </a>
 ✯ 🗽Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
 ✯ 🐍Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-✯ 🛰️Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v1.0.1 [ Sᴛᴀʙʟᴇ ]</b>"""
+✯ 🛰️Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v1.0.1 [ 🔴 LIVE 🔴]</a>
+✯ 📡ʙᴏᴛ sᴇʀᴠᴇʀ: VPS PRIVATE</b>"""
 
     SOURCE_TXT = """
 <b>ɴᴏᴛᴇ:
