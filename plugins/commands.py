@@ -98,7 +98,7 @@ async def skip_msgs(bot, message):
 
 async def start_forward(bot, userid, source_chat_id, last_msg_id):
     btn = [[
-        InlineKeyboardButton("CANCEL", callback_data="cancel_forward")
+        InlineKeyboardButton("⭕CANCEL❌", callback_data="cancel_forward")
     ]]
     active_msg = await bot.send_message(
         chat_id=int(userid),
@@ -116,11 +116,11 @@ async def start_forward(bot, userid, source_chat_id, last_msg_id):
     async with lock:
         try:
             btn = [[
-                InlineKeyboardButton("CANCEL", callback_data="cancel_forward")
+                InlineKeyboardButton("⭕CANCEL❌", callback_data="cancel_forward")
             ]]
             status = 'Forwarding...'
             await active_msg.edit(
-                text=f"<b>Forwarding on progress...\n\nTotal: {total}\nSkipped: {skipped}\nForwarded: {forwarded}\nEmpty Message: {empty}\nNot Media: {notmedia}\nUnsupported Media: {unsupported}\nMessages Left: {left}\n\nStatus: {status}</b>",
+                text=f"<b>🚀LIVE NOW👁️‍🗨️....... \nForwarding on progress...\n\n♻️ Total: {total}\n💣 Skipped: {skipped}\n✅ Forwarded: {forwarded}\n🧬 Empty Message: {empty}\n🎮 Not Media: {notmedia}\n📟 Unsupported Media: {unsupported}\n🔄 Messages Left: {left}\n\n 🔴Status: {status}</b>",
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             current = temp_utils.CURRENT
@@ -135,7 +135,7 @@ async def start_forward(bot, userid, source_chat_id, last_msg_id):
                 current += 1
                 if current % 20 == 0:
                     btn = [[
-                        InlineKeyboardButton("CANCEL", callback_data="cancel_forward")
+                        InlineKeyboardButton("⭕CANCEL❌", callback_data="cancel_forward")
                     ]]
                     status = 'Sleeping for 30 seconds.'
                     await active_msg.edit(
@@ -145,7 +145,7 @@ async def start_forward(bot, userid, source_chat_id, last_msg_id):
                     await asyncio.sleep(30)
                     status = 'Forwarding...'
                     await active_msg.edit( 
-                        text=f"<b>Forwarding on progress...\n\nTotal: {total}\nSkipped: {skipped}\nForwarded: {forwarded}\nEmpty Message: {empty}\nNot Media: {notmedia}\nUnsupported Media: {unsupported}\nMessages Left: {left}\n\nStatus: {status}</b>", 
+                        text=f"<b>🔰 FORWARDING STATUS 🔰\n\n♻️ Total: {total}\n🌬️ Skipped: {skipped}\n✅ Forwarded: {forwarded}\n🧬 Empty Message: {empty}\n🎮 Not Media: {notmedia}\n🗃️ Unsupported Media: {unsupported}\n📟 Messages Left: {left}\n\n🔴 Status: {status}</b>", 
                         reply_markup=InlineKeyboardMarkup(btn) 
                     )
                 if msg.empty:
