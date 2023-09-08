@@ -109,13 +109,13 @@ async def start_forward(bot, userid, source_chat_id, last_msg_id):
         text="<b>Starting Forward Process...</b>",
         reply_markup = InlineKeyboardMarkup(btn)
     )
-    skipped = int(temp_utils.CURRENT)
-    total = 0
-    forwarded = 0
-    empty = 0
-    notmedia = 0
-    unsupported = 0
-    left = 0
+    🌬️ skipped = int(temp_utils.CURRENT)
+    ♻️ total = 0
+    ✅ forwarded = 0
+    🧬 empty = 0
+    🎮 notmedia = 0
+    📟 unsupported = 0
+    🔄 left = 0
     status = 'Idle'
     async with lock:
         try:
