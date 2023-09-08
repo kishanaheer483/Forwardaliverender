@@ -14,7 +14,11 @@ lock = asyncio.Lock()
 
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
-    btn = [[
+    btn =  [[
+
+            InlineKeyboardButton('📢 UPDATE GROUP 📡', url=f"https://t.me/MOVIE_WORLD_IN_MOVIE")
+
+            ],[
             InlineKeyboardButton("🧟 About♻️", callback_data="about"),
             InlineKeyboardButton("🌐 Souce Code 🚀", callback_data="source")
         ],[
