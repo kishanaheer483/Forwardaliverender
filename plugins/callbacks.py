@@ -14,8 +14,8 @@ async def query_handler(bot: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         btn = [[
-            InlineKeyboardButton("Go Back", callback_data="home"),
-            InlineKeyboardButton("Close", callback_data="close")
+            InlineKeyboardButton("⛱️Go Back🔫", callback_data="home"),
+            InlineKeyboardButton("📡Close🚿", callback_data="close")
         ]]
         await query.message.edit_text(
             text=scripts.ABOUT_TXT.format(temp_utils.BOT_NAME),
@@ -37,8 +37,8 @@ async def query_handler(bot: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         btn = [[
-            InlineKeyboardButton("Go Back", callback_data="home"),
-            InlineKeyboardButton("Close", callback_data="close")
+            InlineKeyboardButton("📌Go Back🗡️", callback_data="home"),
+            InlineKeyboardButton("📢Close💣", callback_data="close")
         ]]
         await query.message.edit_text(
             text=scripts.SOURCE_TXT,
