@@ -49,8 +49,8 @@ async def query_handler(bot: Client, query: CallbackQuery):
         temp_utils.CANCEL = True
     elif query.data == "help":
         btn = [[
-            InlineKeyboardButton("Go Back", callback_data="home"),
-            InlineKeyboardButton("Close", callback_data="close")
+            InlineKeyboardButton("♻️Go Back♻️", callback_data="home"),
+            InlineKeyboardButton("📡Close💦", callback_data="close")
         ]]
         await query.message.edit_text(
             text=scripts.HELP_TXT.format(temp_utils.BOT_NAME),
