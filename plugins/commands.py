@@ -72,7 +72,7 @@ async def forward_cmd(bot, message):
         InlineKeyboardButton("NO", callback_data="close")
     ]]
     await message.reply_text(
-        text="Do you want to start forwarding ?",
+        text="🗽 FOLDING STARTING PAGE 🛰️\n\n ♻️DO YOU WANT TO START 🔴 FORWARDING ?🔄",
         reply_markup=InlineKeyboardMarkup(button)
     )
 
