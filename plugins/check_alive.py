@@ -1,5 +1,7 @@
 import time
 
+from datetime import datetime
+
 import random
 
 from pyrogram import Client, filters
@@ -71,3 +73,12 @@ async def ping(_, message):
     time_taken_s = (end_t - start_t) * 1000
 
     await rm.edit(f"Pɪɴɢ🔥!\n{time_taken_s:.3f} ms")
+
+
+
+@Client.on_message(filters.command("time", CMD))
+
+async def time(_, message).reply_text("...........")
+IST = pytz.timezone('Asia/Kolkata')
+datetime_ist = datetime.now(IST)
+                    ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
