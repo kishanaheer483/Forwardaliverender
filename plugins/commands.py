@@ -65,7 +65,7 @@ async def forward_cmd(bot, message):
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
     if lock.locked():
-        return await message.reply_text('<b>Wait until previous process complete.</b>')
+        return await message.reply_text('<b>🌬️ MAY BE YOU ARE ALREADY 🔴 START THE FORWARDING WAIT ⏳ COMPLETING THE PREVIEW 📤 FOR READING THANK YOU ❤️ \n\nWait until previous process complete.</b>')
     button = [[
         InlineKeyboardButton("YES", callback_data=f"forward#{source_chat_id}#{last_msg_id}")
     ],[
@@ -106,7 +106,7 @@ async def start_forward(bot, userid, source_chat_id, last_msg_id):
     ]]
     active_msg = await bot.send_message(
         chat_id=int(userid),
-        text="<b>Starting Forward Process...</b>",
+        text="<b>🔴 Starting Forward ♻️ Process...\n\n Wait⏳ Please few Seconds📌 Process Will Be🧬 Auto Start\n BOT 💤 IS 🛌 SLEEPING 🙈 </b>",
         reply_markup = InlineKeyboardMarkup(btn)
     )
     skipped = int(temp_utils.CURRENT)
